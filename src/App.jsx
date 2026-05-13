@@ -7,7 +7,7 @@ import sharedData from "../shared/hobbies.json";
 import "./App.css";
 
 const { VARIABLE_KEYS, VARIABLE_LABELS, HOBBIES, BAR_COLORS } = sharedData;
-const BACKEND_API = import.meta.env.VITE_BACKEND_API || "/api";
+//const BACKEND_API = import.meta.env.VITE_BACKEND_API || "/api";
 
 function computeScore(sliders, weights) {
   let total = 0;
