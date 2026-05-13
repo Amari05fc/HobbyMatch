@@ -1,0 +1,163 @@
+{
+  "VARIABLE_KEYS": [
+    "energia","sociabilidad","creatividad","paciencia","tiempoLibre",
+    "estresActual","curiosidad","actividadFisica","necesidadSocial",
+    "necesidadRelajacion","competitividad","organizacion","expresionArtistica",
+    "preferenciaExterior","toleranciaFrustracion","presupuesto","independencia",
+    "constancia","nivelTecnologico","busquedaAventura"
+  ],
+  "VARIABLE_LABELS": [
+    "Energía","Sociabilidad","Creatividad","Paciencia","Tiempo libre",
+    "Estrés actual","Curiosidad","Actividad física","Necesidad social",
+    "Necesidad de relajación","Competitividad","Organización","Expresión artística",
+    "Preferencia exterior","Tolerancia a frustración","Presupuesto","Independencia",
+    "Constancia","Nivel tecnológico","Búsqueda de aventura"
+  ],
+  "BAR_COLORS": [
+    "#A78BFA","#C4B5FD","#E0BBFF","#7DD3FC","#67E8F9","#F472B6","#FBBF24","#4ADE80",
+    "#60A5FA","#A78BFA","#C4B5FD","#E0BBFF","#7DD3FC","#67E8F9","#F472B6","#FBBF24",
+    "#4ADE80","#60A5FA","#A78BFA","#C4B5FD"
+  ],
+  "HOBBIES": [
+    {
+      "name": "Senderismo",
+      "short": "Senderismo",
+      "emoji": "🥾",
+      "desc": "Explorar senderos naturales a pie, conectar con la naturaleza y fortalecer el cuerpo al mismo tiempo. Ideal para quienes buscan desconectarse del ruido urbano.",
+      "weights": [0.8,0.5,0.4,0.5,0.7,0.3,0.6,0.9,0.5,0.7,0.4,0.3,0.3,0.9,0.6,0.3,0.6,0.5,0.2,0.9]
+    },
+    {
+      "name": "Programación de videojuegos",
+      "short": "Prog. videojuegos",
+      "emoji": "🎮",
+      "desc": "Crear mundos interactivos desde cero: diseñar mecánicas, gráficos y narrativas. Combina lógica y creatividad de forma única.",
+      "weights": [0.6,0.3,0.9,0.7,0.8,0.4,0.9,0.2,0.2,0.4,0.6,0.8,0.7,0.1,0.7,0.5,0.8,0.8,0.9,0.5]
+    },
+    {
+      "name": "Pintura al óleo",
+      "short": "Pintura",
+      "emoji": "🎨",
+      "desc": "Expresar emociones y visiones a través de pigmentos sobre lienzo. Un proceso meditativo que desarrolla la paciencia y la percepción visual.",
+      "weights": [0.4,0.2,0.9,0.8,0.7,0.3,0.6,0.2,0.1,0.8,0.2,0.5,0.9,0.2,0.6,0.4,0.7,0.7,0.2,0.3]
+    },
+    {
+      "name": "Ajedrez",
+      "short": "Ajedrez",
+      "emoji": "♟️",
+      "desc": "El juego de estrategia por excelencia. Desarrolla el pensamiento crítico, la anticipación y la capacidad de leer al oponente.",
+      "weights": [0.3,0.5,0.7,0.9,0.6,0.3,0.9,0.1,0.4,0.5,0.9,0.9,0.2,0.1,0.8,0.2,0.6,0.7,0.4,0.2]
+    },
+    {
+      "name": "Jardinería",
+      "short": "Jardinería",
+      "emoji": "🌱",
+      "desc": "Cultivar plantas, flores o vegetales en casa o en un huerto. Una actividad terapéutica que recompensa la constancia.",
+      "weights": [0.5,0.3,0.6,0.8,0.7,0.2,0.5,0.5,0.2,0.9,0.2,0.7,0.5,0.8,0.5,0.3,0.6,0.8,0.2,0.4]
+    },
+    {
+      "name": "Cocina gourmet",
+      "short": "Cocina",
+      "emoji": "👨‍🍳",
+      "desc": "Explorar técnicas culinarias avanzadas y combinaciones de sabores. La cocina como arte y ciencia.",
+      "weights": [0.6,0.6,0.8,0.6,0.6,0.3,0.7,0.4,0.5,0.6,0.5,0.8,0.7,0.3,0.5,0.5,0.5,0.7,0.4,0.4]
+    },
+    {
+      "name": "Escalada en roca",
+      "short": "Escalada",
+      "emoji": "🧗",
+      "desc": "Ascender superficies verticales usando fuerza, técnica y concentración. Un reto físico y mental.",
+      "weights": [0.9,0.5,0.5,0.7,0.6,0.3,0.6,0.9,0.4,0.3,0.7,0.6,0.3,0.9,0.7,0.4,0.6,0.7,0.3,0.9]
+    },
+    {
+      "name": "Tocar guitarra",
+      "short": "Guitarra",
+      "emoji": "🎸",
+      "desc": "Aprender a expresarse a través de cuerdas y melodías. Desde el blues hasta el flamenco.",
+      "weights": [0.5,0.6,0.8,0.8,0.7,0.4,0.7,0.3,0.5,0.6,0.4,0.5,0.9,0.2,0.6,0.3,0.6,0.9,0.3,0.4]
+    },
+    {
+      "name": "Fotografía",
+      "short": "Fotografía",
+      "emoji": "📸",
+      "desc": "Capturar momentos, paisajes y emociones con una cámara. Desarrolla el ojo artístico.",
+      "weights": [0.6,0.5,0.8,0.6,0.6,0.3,0.8,0.5,0.4,0.5,0.4,0.6,0.8,0.7,0.5,0.5,0.7,0.6,0.6,0.6]
+    },
+    {
+      "name": "Origami",
+      "short": "Origami",
+      "emoji": "🦢",
+      "desc": "El arte japonés de doblar papel para crear figuras complejas. Entrena la concentración.",
+      "weights": [0.3,0.2,0.7,0.9,0.5,0.2,0.6,0.1,0.1,0.8,0.2,0.8,0.7,0.1,0.7,0.1,0.8,0.8,0.2,0.2]
+    },
+    {
+      "name": "Escritura creativa",
+      "short": "Escritura",
+      "emoji": "✍️",
+      "desc": "Construir mundos, personajes e historias con palabras. Ayuda a procesar emociones.",
+      "weights": [0.4,0.3,0.9,0.7,0.8,0.4,0.8,0.1,0.2,0.7,0.3,0.6,0.9,0.2,0.6,0.2,0.8,0.7,0.3,0.5]
+    },
+    {
+      "name": "Artes marciales",
+      "short": "Artes marciales",
+      "emoji": "🥋",
+      "desc": "Disciplinas de combate que combinan técnica, filosofía y superación personal.",
+      "weights": [0.9,0.4,0.5,0.7,0.6,0.4,0.6,0.9,0.3,0.4,0.8,0.7,0.4,0.3,0.8,0.4,0.6,0.9,0.3,0.7]
+    },
+    {
+      "name": "Yoga",
+      "short": "Yoga",
+      "emoji": "🧘",
+      "desc": "Unión de cuerpo, respiración y mente. Reduce el estrés y mejora la flexibilidad.",
+      "weights": [0.4,0.4,0.5,0.8,0.7,0.2,0.5,0.5,0.3,0.9,0.2,0.6,0.4,0.4,0.7,0.3,0.7,0.7,0.2,0.3]
+    },
+    {
+      "name": "Ciclismo",
+      "short": "Ciclismo",
+      "emoji": "🚴",
+      "desc": "Recorrer distancias sobre ruedas. Ejercicio cardiovascular con la libertad de explorar.",
+      "weights": [0.8,0.5,0.4,0.6,0.7,0.3,0.5,0.9,0.4,0.6,0.6,0.5,0.3,0.8,0.6,0.4,0.6,0.7,0.3,0.7]
+    },
+    {
+      "name": "Modelado 3D",
+      "short": "Modelado 3D",
+      "emoji": "🖥️",
+      "desc": "Diseñar objetos tridimensionales para impresión, animación o videojuegos.",
+      "weights": [0.5,0.2,0.9,0.7,0.7,0.3,0.8,0.1,0.2,0.4,0.4,0.7,0.8,0.1,0.6,0.5,0.7,0.7,0.9,0.4]
+    },
+    {
+      "name": "Astrofotografía",
+      "short": "Astrofoto",
+      "emoji": "🔭",
+      "desc": "Capturar nebulosas y galaxias con telescopio y cámara. Ciencia y arte combinados.",
+      "weights": [0.5,0.3,0.8,0.8,0.7,0.2,0.9,0.3,0.2,0.7,0.4,0.7,0.7,0.8,0.6,0.5,0.7,0.7,0.7,0.6]
+    },
+    {
+      "name": "Producción musical",
+      "short": "Prod. musical",
+      "emoji": "🎛️",
+      "desc": "Crear canciones y beats desde cero usando software y controladores.",
+      "weights": [0.6,0.4,0.9,0.7,0.7,0.4,0.8,0.2,0.3,0.5,0.5,0.7,0.9,0.1,0.6,0.5,0.7,0.8,0.9,0.5]
+    },
+    {
+      "name": "Juegos de mesa",
+      "short": "Juegos de mesa",
+      "emoji": "🎲",
+      "desc": "Estrategia, cooperación y diversión en grupo.",
+      "weights": [0.4,0.8,0.6,0.7,0.6,0.3,0.7,0.2,0.8,0.5,0.8,0.5,0.4,0.2,0.6,0.3,0.4,0.5,0.3,0.4]
+    },
+    {
+      "name": "Calistenia",
+      "short": "Calistenia",
+      "emoji": "💪",
+      "desc": "Entrenamiento de fuerza usando el peso corporal. Sin necesidad de equipamiento ni gimnasio.",
+      "weights": [0.9,0.4,0.4,0.7,0.7,0.4,0.5,0.9,0.3,0.5,0.7,0.7,0.2,0.5,0.7,0.2,0.7,0.9,0.3,0.6]
+    },
+    {
+      "name": "Lectura",
+      "short": "Lectura",
+      "emoji": "📚",
+      "desc": "Explorar mundos, ideas y perspectivas a través de libros. Amplía la empatía y el conocimiento.",
+      "weights": [0.3,0.2,0.6,0.7,0.7,0.2,0.8,0.1,0.1,0.8,0.2,0.5,0.5,0.2,0.6,0.2,0.8,0.6,0.3,0.3]
+    }
+  ]
+}

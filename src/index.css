@@ -1,0 +1,79 @@
+:root {
+  --accent: #a78bfa;
+  --accent-light: #c4b5fd;
+  --bg: #0F0A1F;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border: rgba(167, 139, 250, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #0F0A1F;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+  display: block !important;
+}
+
+#center, .hero, main {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+
+h1, h2, h3 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(167, 139, 250, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(167, 139, 250, 0.5);
+}
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
