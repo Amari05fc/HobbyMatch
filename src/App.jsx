@@ -7,7 +7,7 @@ import sharedData from "../shared/hobbies.json";
 import "./App.css";
 
 const { VARIABLE_KEYS, VARIABLE_LABELS, HOBBIES, BAR_COLORS } = sharedData;
-//const BACKEND_API = import.meta.env.VITE_BACKEND_API || "/api";
+// const BACKEND_API = import.meta.env.VITE_BACKEND_API || "/api";
 
 function computeScore(sliders, weights) {
   let total = 0;
@@ -73,7 +73,7 @@ function ResultPage({ top3, fallbackTop3, onBack, loading, error }) {
             background: "rgba(255,255,255,0.08)", border: "1px solid rgba(167, 139, 250, 0.2)",
             borderRadius: 18, padding: "18px 24px", marginBottom: 24, color: "#A5B4FC"
           }}>
-            Cargando recomendaciones desde el backend...
+            Calculando recomendaciones...
           </div>
         )}
 
@@ -132,50 +132,9 @@ export default function HobbyRecommender() {
     [sliders]
   );
 
-  const handleDiscover = async () => {
-    setServerTop3(null);
-    setBackendError("");
-    setLoading(true);
+  const handleDiscover = () => {
     setPage("results");
-
-    const payload = Object.fromEntries(
-      VARIABLE_KEYS.map((key) => [key, sliders[key]])
-    );
-
-    try {
-      const response = await fetch(`${BACKEND_API}/recomendar-hobbies`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const text = await response.text();
-      let data = null;
-      try {
-        data = text ? JSON.parse(text) : null;
-      } catch (parseError) {
-        throw new Error(
-          `Respuesta inválida del backend (${response.status}): ${text || "cuerpo vacío"}`
-        );
-      }
-
-      if (!response.ok) {
-        throw new Error(
-          data?.message || `Backend respondió con ${response.status}`
-        );
-      }
-
-      if (!data?.success) {
-        throw new Error(data?.message || "No fue posible obtener recomendaciones del backend.");
-      }
-
-      setServerTop3(data.top3);
-    } catch (err) {
-      setBackendError(err.message || "Error de conexión con el backend.");
-      setServerTop3(null);
-    } finally {
-      setLoading(false);
-    }
+    setServerTop3(ranked.slice(0, 3));
   };
 
   // Orden FIJO (no se reordena)
