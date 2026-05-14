@@ -109,6 +109,22 @@ function ResultPage({ top3, fallbackTop3, onBack, loading, error }) {
                   </span>
                 </div>
                 <p style={{ color: "#CBD5E1", lineHeight: 1.7 }}>{h.desc}</p>
+                {i === 0 && h.resources?.length > 0 && (
+                  <div style={{ marginTop: 18, padding: 18, background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid rgba(167, 139, 250, 0.12)" }}>
+                    <div style={{ color: "#A5B4FC", fontWeight: 700, marginBottom: 10 }}>
+                      Recursos recomendados
+                    </div>
+                    <ul style={{ margin: 0, padding: 0, listStyle: "none", color: "#CBD5E1" }}>
+                      {h.resources.map((link, idx) => (
+                        <li key={link} style={{ marginBottom: idx < h.resources.length - 1 ? 10 : 0 }}>
+                          <a href={link} target="_blank" rel="noreferrer" style={{ color: "#C4B5FD", textDecoration: "underline" }}>
+                            {link}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           ))}
