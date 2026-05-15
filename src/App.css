@@ -94,14 +94,38 @@
 
 .chart-card {
   margin-bottom: 40px;
+  padding: 32px;
+}
+
+.chart-card h3 {
+  margin: 0;
 }
 
 .legend {
   display: flex;
-  gap: 14px;
-  margin-top: 24px;
+  gap: 12px;
+  margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  background: rgba(255,255,255,0.05);
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(167, 139, 250, 0.12);
+}
+
+.legend__swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .legend__item {

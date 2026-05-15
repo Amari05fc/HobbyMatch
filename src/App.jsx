@@ -261,17 +261,13 @@ export default function HobbyRecommender() {
           </div>
         </div>
 
-        <div style={{
-          background: "rgba(255,255,255,0.05)", border: "1px solid rgba(167, 139, 250, 0.2)",
-          borderRadius: 24, padding: "36px 32px", backdropFilter: "blur(16px)",
-          boxShadow: "0 25px 50px -12px rgba(0,0,0,0.4)"
-        }}>
+        <div className="section-card chart-card">
           <div style={{ marginBottom: 24 }}>
             <h3 style={{ fontSize: 22, marginBottom: 6 }}>Compatibilidad en tiempo real</h3>
           </div>
 
-          <ResponsiveContainer width="100%" height={170}>
-            <BarChart data={chartData} barCategoryGap={16} barSize={35}>
+          <ResponsiveContainer width="100%" height={210}>
+            <BarChart data={chartData} barCategoryGap="18%" barSize={22}>
               <Tooltip content={<CustomTooltip />} />
               <Bar dataKey="score" radius={[6, 6, 0, 0]}>
                 {chartData.map((entry, i) => (
@@ -280,6 +276,15 @@ export default function HobbyRecommender() {
               </Bar>
             </BarChart>
           </ResponsiveContainer>
+
+          <div className="legend">
+            {chartData.map((entry, idx) => (
+              <div className="legend__item" key={entry.name}>
+                <span className="legend__swatch" style={{ background: entry.color }} />
+                <span>{entry.name}</span>
+              </div>
+            ))}
+          </div>
 
         </div>
 
