@@ -6,9 +6,18 @@ import {
 import sharedData from "../shared/hobbies.json";
 import "./App.css";
 
+// Datos compartidos del proyecto, definidos en shared/hobbies.json.
+// VARIABLE_KEYS son las variables que controla el usuario con sliders.
+// HOBBIES contiene los hobbies disponibles, cada uno con pesos y recursos.
 const { VARIABLE_KEYS, VARIABLE_LABELS, HOBBIES, BAR_COLORS } = sharedData;
+const MIN_SCORE_THRESHOLD = 0.4; // Umbral para considerar una recomendación confiable.
 // const BACKEND_API = import.meta.env.VITE_BACKEND_API || "/api";
 
+// Esta función contiene la lógica principal de comparación entre el perfil del usuario
+// y cada hobby. No es un sistema de reglas rígidas, sino una medida gradual de similitud:
+// para cada variable se calcula 1 - |valor_usuario - peso_hobby|.
+// Si el usuario está muy cerca del valor ideal del hobby, el término se aproxima a 1.
+// Si está lejos, se aproxima a 0. El resultado final es el promedio de todas las variables.
 function computeScore(sliders, weights) {
   let total = 0;
   for (let i = 0; i < VARIABLE_KEYS.length; i++) {
@@ -41,6 +50,8 @@ function CustomTooltip({ active, payload }) {
 
 function ResultPage({ top3, fallbackTop3, onBack, loading, error }) {
   const accentColor = ["#FF6B6B", "#4ECDC4", "#A78BFA"];
+  // `top3` viene del servidor si se obtiene, y `fallbackTop3` es el cálculo local.
+  // La página de resultados muestra siempre el top 3 más relevante.
   const results = top3 ?? fallbackTop3;
 
   return (
@@ -135,6 +146,8 @@ function ResultPage({ top3, fallbackTop3, onBack, loading, error }) {
 }
 
 export default function HobbyRecommender() {
+  // Estado que guarda los valores de los sliders entre 0 y 1.
+  // Estos valores representan el perfil del usuario en cada dimensión.
   const init = Object.fromEntries(VARIABLE_KEYS.map(k => [k, 0.5]));
   const [sliders, setSliders] = useState(init);
   const [page, setPage] = useState("main");
@@ -142,18 +155,32 @@ export default function HobbyRecommender() {
   const [backendError, setBackendError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // `ranked` calcula la puntuación de cada hobby con computeScore y ordena los hobbies.
+  // Esta es la parte donde la lógica difusa se aplica a todos los hobbies en tiempo real.
   const ranked = useMemo(() =>
     HOBBIES.map(h => ({ ...h, score: computeScore(sliders, h.weights) }))
       .sort((a, b) => b.score - a.score),
     [sliders]
   );
 
+  // Al hacer click en descubrir, mostramos la pantalla de resultados.
+  // `serverTop3` puede simular una respuesta de backend o usar el ranking local.
   const handleDiscover = () => {
+    const top3Results = ranked.slice(0, 3);
+
+    // Umbral local: si el mejor hobby no pasa el corte, mostramos aviso.
+    if (top3Results[0]?.score < MIN_SCORE_THRESHOLD) {
+      setBackendError("No hay coincidencias confiables con tu perfil actual. Ajusta los sliders para intentar de nuevo.");
+    } else {
+      setBackendError("");
+    }
+
     setPage("results");
-    setServerTop3(ranked.slice(0, 3));
+    setServerTop3(top3Results);
   };
 
-  // Orden FIJO (no se reordena)
+  // Datos para la gráfica de barras. El orden se mantiene igual al definido
+  // en shared/hobbies.json, aunque las puntuaciones sí cambian según los sliders.
   const chartData = useMemo(() =>
     HOBBIES.map((h, i) => ({
       name: h.short,
@@ -234,7 +261,6 @@ export default function HobbyRecommender() {
           </div>
         </div>
 
-        {/* Gráfica Actualizada */}
         <div style={{
           background: "rgba(255,255,255,0.05)", border: "1px solid rgba(167, 139, 250, 0.2)",
           borderRadius: 24, padding: "36px 32px", backdropFilter: "blur(16px)",

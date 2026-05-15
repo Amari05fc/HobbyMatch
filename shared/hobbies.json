@@ -21,6 +21,7 @@
     "nivelTecnologico",
     "busquedaAventura"
   ],
+
   "VARIABLE_LABELS": [
     "Energía",
     "Sociabilidad",
@@ -43,6 +44,7 @@
     "Nivel tecnológico",
     "Búsqueda de aventura"
   ],
+
   "BAR_COLORS": [
     "#A78BFA",
     "#C4B5FD",
@@ -65,6 +67,7 @@
     "#A78BFA",
     "#C4B5FD"
   ],
+
   "HOBBIES": [
     {
       "name": "Senderismo",
@@ -94,8 +97,8 @@
         0.9
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/CHKcVcYbGH0",
+        "https://youtu.be/KYfQCCaruPQ"
       ]
     },
     {
@@ -126,8 +129,8 @@
         0.5
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/AVrqQIZ_BaE?list=PLO10Tvf48X2NMBaTzLf3dpEc9os_hbMCi",
+        "https://youtu.be/BUcSWQxY0MI?list=PL2ImQBOumhlN2d1taIxOU280LDDq-gRYi"
       ]
     },
     {
@@ -158,8 +161,8 @@
         0.3
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/V7oXyzrk81E",
+        "https://youtu.be/upDxvnHtGh0"
       ]
     },
     {
@@ -190,8 +193,8 @@
         0.2
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/7es3ucBXOcs",
+        "https://youtu.be/BcwkcbHRDx0?list=PLWgqlpb234bHv38g6zXoi3WIJJonzZSAl"
       ]
     },
     {
@@ -222,8 +225,8 @@
         0.4
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/ly2N_FRHxI8",
+        "https://youtu.be/X3SP1Fub3bw"
       ]
     },
     {
@@ -254,8 +257,8 @@
         0.4
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/gnkLCnBizqo",
+        "https://youtu.be/IOyJzC6gUQE"
       ]
     },
     {
@@ -286,8 +289,8 @@
         0.9
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/ObKUMQTem9k",
+        "https://youtu.be/jMKWC70LRmI"
       ]
     },
     {
@@ -318,8 +321,8 @@
         0.4
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/S_QIaGgLJ-0",
+        "https://youtu.be/-COrB11yUsE"
       ]
     },
     {
@@ -350,8 +353,8 @@
         0.6
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/Ar_h-uwUvDs",
+        "https://youtu.be/XR_R87DXq7Y"
       ]
     },
     {
@@ -382,8 +385,8 @@
         0.2
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/ocfXKbtHOuo",
+        "https://youtu.be/rh7GQZ8kkqc?list=PL6hjyO53FFgqG6t-znWvVey4VrD4NAkSF"
       ]
     },
     {
@@ -414,8 +417,8 @@
         0.5
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/Ol7f5HowTRg",
+        "https://youtu.be/N1NdM_mITbs"
       ]
     },
     {
@@ -446,40 +449,40 @@
         0.7
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/jli2r5trQJI?list=PLokmHHTIS-5joB6gyuAzfO61VDin5u-H5",
+        "https://youtu.be/aqXKjzl9mUM"
       ]
     },
     {
-      "name": "Yoga",
-      "short": "Yoga",
-      "emoji": "🧘",
-      "desc": "Unión de cuerpo, respiración y mente. Reduce el estrés y mejora la flexibilidad.",
+      "name": "Paisajismo Acuático",
+      "short": "Aquascaping",
+      "emoji": "🌿",
+      "desc": "El arte de crear paisajes subacuáticos dentro de acuarios. Requiere alta atención al detalle, biología básica y mucha paciencia.",
       "weights": [
-        0.4,
-        0.4,
-        0.5,
-        0.8,
-        0.7,
-        0.2,
-        0.5,
-        0.5,
-        0.3,
-        0.9,
-        0.2,
-        0.6,
-        0.4,
-        0.4,
-        0.7,
-        0.3,
-        0.7,
-        0.7,
-        0.2,
-        0.3
+        0.3,  
+        0.1,  
+        0.9,  
+        1.0,  
+        0.7,  
+        0.3,  
+        0.6,  
+        0.1,  
+        0.1,  
+        0.9,  
+        0.1,  
+        0.8,  
+        0.9,  
+        0.1,  
+        0.8,  
+        0.8,  
+        0.9,  
+        0.9,  
+        0.5,  
+        0.1   
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/RxZOr8PxUEg",
+        "https://youtu.be/q9fdIOvKMkY"
       ]
     },
     {
@@ -510,8 +513,8 @@
         0.7
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/T6zd9w5qEUY",
+        "https://youtu.be/RobZjfUV3KU"
       ]
     },
     {
@@ -542,8 +545,8 @@
         0.4
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/LcApcwU06mM",
+        "https://youtu.be/TYKiHiEVq0U"
       ]
     },
     {
@@ -574,8 +577,8 @@
         0.6
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/_ZFPW3YM78E",
+        "https://youtu.be/bnvKSYRyiL4"
       ]
     },
     {
@@ -606,8 +609,8 @@
         0.5
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/5MpJFpL2MYo",
+        "https://youtu.be/1gOp3F2-PaA"
       ]
     },
     {
@@ -638,8 +641,8 @@
         0.4
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/cTsWpTPOR0Y",
+        "https://youtu.be/shR5mehp_SE"
       ]
     },
     {
@@ -670,8 +673,8 @@
         0.6
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/2uYurS37svo",
+        "https://youtu.be/cmh1LKnRUyg"
       ]
     },
     {
@@ -702,8 +705,551 @@
         0.3
       ],
       "resources": [
-        "https://example.com/guide",
-        "https://example.com/video"
+        "https://youtu.be/ZxiiiGSFrCw",
+        "https://youtu.be/h_W_kh3pGUI"
+      ]
+    },
+    {
+    "name": "Cerámica",
+    "short": "Cerámica",
+    "emoji": "🏺",
+    "desc": "Modelar y decorar piezas de barro para crear objetos artísticos y funcionales.",
+    "weights": [
+      0.3,
+      0.2,
+      0.9,
+      0.9,
+      0.7,
+      0.2,
+      0.7,
+      0.2,
+      0.2,
+      0.9,
+      0.2,
+      0.7,
+      0.9,
+      0.1,
+      0.8,
+      0.6,
+      0.8,
+      0.8,
+      0.2,
+      0.2
+    ],
+    "resources": [
+      "https://youtu.be/GRCiJjYLVX0",
+      "https://youtu.be/D3qgoQQQJYs?list=PL12BisXwTaDG-futaM9EiXfdSf2szmYLK"
+    ]
+    },
+    {
+      "name": "Birdwatching",
+      "short": "Birdwatching",
+      "emoji": "🦜",
+      "desc": "Observar aves en la naturaleza y aprender sobre sus comportamientos y especies.",
+      "weights": [
+        0.3,
+        0.3,
+        0.4,
+        0.8,
+        0.7,
+        0.2,
+        0.9,
+        0.5,
+        0.3,
+        0.9,
+        0.1,
+        0.4,
+        0.2,
+        0.9,
+        0.6,
+        0.4,
+        0.9,
+        0.7,
+        0.3,
+        0.5
+      ],
+      "resources": [
+        "https://youtu.be/8VLjqqlJ71w",
+        "https://youtu.be/DSIhFy6tlvI"
+      ]
+    },
+    {
+      "name": "Encuadernación artesanal",
+      "short": "Encuadernación",
+      "emoji": "📖",
+      "desc": "Crear y reparar libros de forma manual usando técnicas tradicionales.",
+      "weights": [
+        0.2,
+        0.2,
+        0.8,
+        0.9,
+        0.7,
+        0.2,
+        0.6,
+        0.1,
+        0.2,
+        0.9,
+        0.1,
+        0.8,
+        0.8,
+        0.1,
+        0.8,
+        0.5,
+        0.9,
+        0.8,
+        0.2,
+        0.1
+      ],
+      "resources": [
+        "https://youtu.be/WQDWnTCgaPs?list=PLroqqMBkHbwr2I2AAOXWpxZpW9LA8UyP9",
+        "https://youtu.be/bLZD2vZ5k8A"
+      ]
+    },
+    {
+      "name": "Apicultura urbana",
+      "short": "Apicultura",
+      "emoji": "🐝",
+      "desc": "Cuidar abejas y aprender sobre producción de miel y polinización.",
+      "weights": [
+        0.5,
+        0.3,
+        0.4,
+        0.8,
+        0.8,
+        0.3,
+        0.9,
+        0.4,
+        0.3,
+        0.6,
+        0.1,
+        0.8,
+        0.2,
+        0.8,
+        0.8,
+        0.7,
+        0.8,
+        0.9,
+        0.3,
+        0.6
+      ],
+      "resources": [
+        "https://youtu.be/dEaqs1nbJ9o",
+        "https://youtu.be/CfnBM2eEE1w"
+      ]
+    },
+    {
+      "name": "Restauración de muebles",
+      "short": "Restauración",
+      "emoji": "🪑",
+      "desc": "Reparar y renovar muebles antiguos para darles nueva vida.",
+      "weights": [
+        0.5,
+        0.2,
+        0.7,
+        0.9,
+        0.8,
+        0.3,
+        0.7,
+        0.5,
+        0.2,
+        0.7,
+        0.2,
+        0.8,
+        0.7,
+        0.4,
+        0.9,
+        0.7,
+        0.8,
+        0.9,
+        0.3,
+        0.4
+      ],
+      "resources": [
+        "https://youtu.be/hwUh8UdXgkg",
+        "https://youtu.be/TdBMaNcuzPA"
+      ]
+    },
+    {
+      "name": "Slackline",
+      "short": "Slackline",
+      "emoji": "🤸",
+      "desc": "Mantener el equilibrio caminando sobre una cinta suspendida.",
+      "weights": [
+        0.9,
+        0.5,
+        0.4,
+        0.7,
+        0.5,
+        0.5,
+        0.6,
+        0.9,
+        0.5,
+        0.4,
+        0.6,
+        0.5,
+        0.2,
+        0.9,
+        0.9,
+        0.4,
+        0.7,
+        0.9,
+        0.2,
+        0.9
+      ],
+      "resources": [
+        "https://youtu.be/cucTR4Vbpdk",
+        "https://youtu.be/OiSa6S7277k"
+      ]
+    },
+    {
+      "name": "Talla en madera",
+      "short": "Talla madera",
+      "emoji": "🪵",
+      "desc": "Esculpir figuras y diseños utilizando herramientas de carpintería.",
+      "weights": [
+        0.4,
+        0.2,
+        0.9,
+        0.9,
+        0.8,
+        0.3,
+        0.6,
+        0.4,
+        0.2,
+        0.8,
+        0.2,
+        0.7,
+        0.8,
+        0.2,
+        0.9,
+        0.5,
+        0.9,
+        0.9,
+        0.1,
+        0.3
+      ],
+      "resources": [
+        "https://youtu.be/NKnRTNTKeyE?list=PLwlnwRz-7DRTnzPCWCyi-8BFQ1zmMKEZL",
+        "https://youtu.be/3sCYlfrJ10s?list=PLwlnwRz-7DRR5qgicGrSQe4EF3spdszJ9"
+      ]
+    },
+    {
+      "name": "Geocaching",
+      "short": "Geocaching",
+      "emoji": "🧭",
+      "desc": "Buscar tesoros escondidos usando GPS y pistas.",
+      "weights": [
+        0.7,
+        0.5,
+        0.3,
+        0.5,
+        0.6,
+        0.4,
+        0.9,
+        0.8,
+        0.5,
+        0.5,
+        0.4,
+        0.6,
+        0.1,
+        0.9,
+        0.7,
+        0.4,
+        0.8,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "resources": [
+        "https://youtu.be/kFnz8onMqFg"
+      ]
+    },
+    {
+      "name": "Lettering",
+      "short": "Lettering",
+      "emoji": "✍️",
+      "desc": "Diseñar letras decorativas y composiciones tipográficas artísticas.",
+      "weights": [
+        0.2,
+        0.2,
+        0.9,
+        0.8,
+        0.6,
+        0.2,
+        0.6,
+        0.1,
+        0.2,
+        0.9,
+        0.1,
+        0.7,
+        0.9,
+        0.1,
+        0.7,
+        0.3,
+        0.9,
+        0.8,
+        0.3,
+        0.1
+      ],
+      "resources": [
+        "https://youtu.be/YYQbH7ghpWM?list=PLS4lvjlWB4oXEnZ8uO2bU0DcoMb2_cEt5",
+        "https://youtu.be/j3sv99ugy1g"
+      ]
+    },
+    {
+      "name": "Observación astronómica",
+      "short": "Astronomía",
+      "emoji": "🔭",
+      "desc": "Explorar el cielo nocturno y aprender sobre estrellas y planetas.",
+      "weights": [
+        0.2,
+        0.2,
+        0.4,
+        0.9,
+        0.8,
+        0.2,
+        1.0,
+        0.2,
+        0.2,
+        0.9,
+        0.1,
+        0.5,
+        0.3,
+        0.8,
+        0.7,
+        0.7,
+        0.9,
+        0.8,
+        0.7,
+        0.5
+      ],
+      "resources": [
+        "https://youtu.be/4gvzyLIlSyY",
+        "https://youtu.be/lATW8UyAV0E"
+      ]
+    },
+    {
+      "name": "Improvisación teatral",
+      "short": "Impro teatral",
+      "emoji": "🎭",
+      "desc": "Crear escenas espontáneas desarrollando creatividad y expresión.",
+      "weights": [
+        0.7,
+        0.9,
+        0.9,
+        0.4,
+        0.5,
+        0.5,
+        0.8,
+        0.5,
+        0.9,
+        0.3,
+        0.5,
+        0.4,
+        1.0,
+        0.2,
+        0.7,
+        0.3,
+        0.3,
+        0.6,
+        0.2,
+        0.6
+      ],
+      "resources": [
+        "https://youtu.be/eO7p5tTAU3w",
+        "https://youtu.be/UDPrJvQOvUQ"
+      ]
+    },
+    {
+      "name": "Voluntariado con animales",
+      "short": "Voluntariado",
+      "emoji": "🐶",
+      "desc": "Ayudar en refugios y cuidar animales necesitados.",
+      "weights": [
+        0.6,
+        0.7,
+        0.4,
+        0.7,
+        0.7,
+        0.3,
+        0.7,
+        0.6,
+        0.8,
+        0.7,
+        0.1,
+        0.6,
+        0.3,
+        0.7,
+        0.8,
+        0.3,
+        0.5,
+        0.8,
+        0.1,
+        0.5
+      ],
+      "resources": [
+        "https://youtu.be/Ak22r9i3okU",
+        "https://youtu.be/XIiMhuRbDBs"
+      ]
+    },
+    {
+      "name": "Bordado contemporáneo",
+      "short": "Bordado",
+      "emoji": "🧵",
+      "desc": "Crear diseños modernos usando técnicas de bordado artesanal.",
+      "weights": [
+        0.2,
+        0.2,
+        0.9,
+        0.9,
+        0.7,
+        0.2,
+        0.6,
+        0.1,
+        0.2,
+        1.0,
+        0.1,
+        0.7,
+        0.9,
+        0.1,
+        0.8,
+        0.3,
+        0.9,
+        0.9,
+        0.1,
+        0.1
+      ],
+      "resources": [
+        "https://youtu.be/PLssCCFD-SI",
+        "https://youtu.be/mTzxbGiir0k?list=PLxyZST6LOLb4o04Q_z4P5ATIGzqcdJQWQ"
+      ]
+    },
+    {
+      "name": "Esgrima",
+      "short": "Esgrima",
+      "emoji": "🤺",
+      "desc": "Deporte de combate basado en rapidez, estrategia y precisión.",
+      "weights": [
+        0.9,
+        0.7,
+        0.4,
+        0.7,
+        0.6,
+        0.5,
+        0.6,
+        0.9,
+        0.6,
+        0.3,
+        0.9,
+        0.8,
+        0.2,
+        0.3,
+        0.9,
+        0.7,
+        0.5,
+        0.9,
+        0.2,
+        0.8
+      ],
+      "resources": [
+        "https://youtu.be/OKii1peZ_2E",
+        "https://youtu.be/HDwfH48EGvk"
+      ]
+    },
+    {
+      "name": "Club de debate",
+      "short": "Debate",
+      "emoji": "🗣️",
+      "desc": "Discutir ideas y desarrollar habilidades de argumentación.",
+      "weights": [
+        0.5,
+        0.9,
+        0.7,
+        0.6,
+        0.6,
+        0.5,
+        0.8,
+        0.1,
+        0.9,
+        0.2,
+        0.8,
+        0.7,
+        0.7,
+        0.1,
+        0.8,
+        0.2,
+        0.4,
+        0.7,
+        0.5,
+        0.3
+      ],
+      "resources": [
+        "https://youtu.be/NUHqrP6X-5E",
+        "https://youtu.be/ePcNSchK1QY"
+      ]
+    },
+    {
+      "name": "Micología amateur",
+      "short": "Micología",
+      "emoji": "🍄",
+      "desc": "Explorar y aprender sobre hongos en entornos naturales.",
+      "weights": [
+        0.4,
+        0.3,
+        0.4,
+        0.8,
+        0.7,
+        0.3,
+        1.0,
+        0.6,
+        0.3,
+        0.8,
+        0.1,
+        0.6,
+        0.2,
+        0.9,
+        0.8,
+        0.4,
+        0.8,
+        0.8,
+        0.3,
+        0.7
+      ],
+      "resources": [
+        "https://youtu.be/w1pM6soeUik",
+        "https://youtu.be/OC98_OrWGuc"
+      ]
+    },
+    {
+      "name": "Creación de velas artesanales",
+      "short": "Velas",
+      "emoji": "🕯️",
+      "desc": "Fabricar velas decorativas y aromáticas de manera artesanal.",
+      "weights": [
+        0.2,
+        0.2,
+        0.8,
+        0.8,
+        0.6,
+        0.2,
+        0.5,
+        0.1,
+        0.2,
+        1.0,
+        0.1,
+        0.7,
+        0.8,
+        0.1,
+        0.7,
+        0.4,
+        0.9,
+        0.8,
+        0.2,
+        0.1
+      ],
+      "resources": [
+        "https://youtu.be/FVjLGy5aatI",
+        "https://youtu.be/-Juv4J6S6Xg?list=PLjE7ePNKkqNo4jJ_8_d_dZrffPOEX8jBJ"
       ]
     }
   ]
