@@ -5,6 +5,7 @@ import {
 } from "recharts";
 import sharedData from "../shared/hobbies.json";
 import "./App.css";
+import WelcomePage from "./WelcomePage";
 
 // Datos compartidos del proyecto, definidos en shared/hobbies.json.
 // VARIABLE_KEYS son las variables que controla el usuario con sliders.
@@ -150,7 +151,7 @@ export default function HobbyRecommender() {
   // Estos valores representan el perfil del usuario en cada dimensión.
   const init = Object.fromEntries(VARIABLE_KEYS.map(k => [k, 0.5]));
   const [sliders, setSliders] = useState(init);
-  const [page, setPage] = useState("main");
+  const [page, setPage] = useState("welcome");
   const [serverTop3, setServerTop3] = useState(null);
   const [backendError, setBackendError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -189,6 +190,10 @@ export default function HobbyRecommender() {
     })),
     [sliders]
   );
+
+  if (page === "welcome") {
+    return <WelcomePage onStart={() => setPage("main")} />;
+  }
 
   if (page === "results") {
     return (
