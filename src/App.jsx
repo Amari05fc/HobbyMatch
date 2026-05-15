@@ -240,7 +240,7 @@ export default function HobbyRecommender() {
             Ajusta los valores
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(380px, 1fr))", gap: "32px 48px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 380px), 1fr))", gap: "32px 48px" }}>
             {VARIABLE_KEYS.map((key, i) => {
               const val = sliders[key];
               const pct = Math.round(val * 100);
@@ -277,14 +277,6 @@ export default function HobbyRecommender() {
             </BarChart>
           </ResponsiveContainer>
 
-          <div className="legend">
-            {chartData.map((entry, idx) => (
-              <div className="legend__item" key={entry.name}>
-                <span className="legend__swatch" style={{ background: entry.color }} />
-                <span>{entry.name}</span>
-              </div>
-            ))}
-          </div>
 
         </div>
 
